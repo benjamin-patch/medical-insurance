@@ -7,7 +7,9 @@ smoker = 0
 
 
 # Add insurance estimate formula below
+insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
 
+print("This person's insurance cost is", insurance_cost, "dollars.")
 
 # Age Factor
 
