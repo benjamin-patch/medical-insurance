@@ -1,5 +1,6 @@
 # conditional costs
-
+def analyze_smoker(smoker_status):
+  print(smoker_status)
  
 # estimate insurance cost
 def estimate_insurance_cost(name, age, sex, num_of_children, smoker):
