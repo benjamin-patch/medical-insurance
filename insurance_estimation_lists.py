@@ -14,3 +14,7 @@ rohan_insurance_cost = estimate_insurance_cost(name = 'Rohan', age = 25, sex = 1
 
 # estimate Valentina's insurance cost
 valentina_insurance_cost = estimate_insurance_cost(name = 'Valentina', age = 53, sex = 0, bmi = 31.4, num_of_children = 0, smoker = 1)
+
+# list actual insurance costs
+names = ['Maria', 'Rohan', 'Valentina']
+insurance_costs = [4150.0, 5320.0, 35210.0]
