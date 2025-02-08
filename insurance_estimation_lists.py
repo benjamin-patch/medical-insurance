@@ -25,7 +25,7 @@ print('Actual insurance cost data:', insurance_data)
 # consolidate estimated insurance data
 estimated_insurance_data = []
 
-estimated_insurance_data.append(("Maria", maria_insurance_cost))
+estimated_insurance_data.append(('Maria', maria_insurance_cost))
 estimated_insurance_data.append(('Rohan', rohan_insurance_cost))
 estimated_insurance_data.append(('Valentina', valentina_insurance_cost))
 
