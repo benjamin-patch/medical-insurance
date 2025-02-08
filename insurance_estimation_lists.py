@@ -21,3 +21,12 @@ insurance_costs = [4150.0, 5320.0, 35210.0]
 
 insurance_data = list(zip(names, insurance_costs))
 print(insurance_data)
+
+# consolidate estimated insurance data
+estimated_insurance_data = []
+
+estimated_insurance_data.append(("Maria", maria_insurance_cost))
+estimated_insurance_data.append(('Rohan', rohan_insurance_cost))
+estimated_insurance_data.append(('Valentina', valentina_insurance_cost))
+
+print(estimated_insurance_data)
