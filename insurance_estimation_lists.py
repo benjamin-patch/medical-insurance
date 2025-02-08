@@ -30,3 +30,17 @@ estimated_insurance_data.append(('Rohan', rohan_insurance_cost))
 estimated_insurance_data.append(('Valentina', valentina_insurance_cost))
 
 print('Estimated insurance cost data:', estimated_insurance_data)
+
+# calculate difference between actual cost and estimated cost
+maria_cost_difference = maria_insurance_cost - insurance_costs[0]
+rohan_cost_difference = rohan_insurance_cost - insurance_costs[1]
+valentina_cost_difference = valentina_insurance_cost - insurance_costs[2]
+
+# list difference between actual cost and estimated cost
+insurance_cost_difference = []
+
+insurance_cost_difference.append(('Maria', maria_cost_difference))
+insurance_cost_difference.append(('Rohan', rohan_cost_difference))
+insurance_cost_difference.append(('Valentina', valentina_cost_difference))
+
+print('Difference between actual and estimated costs:', insurance_cost_difference)
