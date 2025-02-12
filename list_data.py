@@ -12,3 +12,7 @@ print(medical_records)
 # print number of medical records
 num_medical_records = len(medical_records)
 print('There are', num_medical_records, 'medical records.')
+
+# print first record
+first_medical_record = medical_records[0]
+print('Here is the first medical record:', first_medical_record)
