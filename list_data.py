@@ -6,3 +6,7 @@ names.append('Priscilla')
 insurance_costs.append(8320.0)
 print(names)
 print(insurance_costs)
+
+# combine two lists into a single 2D list
+medical_records = zip(names, insurance_costs)
+print(list(medical_records))
