@@ -6,5 +6,9 @@ names.append('Priscilla')
 insurance_costs.append(8320.0)
 
 # combine two lists into a single 2D list
-medical_records = zip(names, insurance_costs)
-print(list(medical_records))
+medical_records = list(zip(names, insurance_costs))
+print(medical_records)
+
+# print number of medical records
+num_medical_records = len(medical_records)
+print('There are', num_medical_records, 'medical records.')
