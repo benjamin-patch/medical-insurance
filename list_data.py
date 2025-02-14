@@ -28,3 +28,7 @@ print('Here are the three cheapest insurance costs in our medical records: ' + s
 # store and print the three most expensive insurance costs
 priciest_three = medical_records[-3:]
 print('Here are the three most expensive insurance costs in our medical records: ' + str(priciest_three))
+
+# count and print the number of records containing the name 'Paul'
+occurrences_paul = names.count('Paul')
+print('There are', occurrences_paul, 'individuals with the name Paul in our medical records.')
