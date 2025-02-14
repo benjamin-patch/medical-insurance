@@ -20,3 +20,7 @@ print('Here is the first medical record:', first_medical_record)
 # sort records from lowest to highest cost
 medical_records.sort(key=lambda item: item[1])
 print("Here are the medical records sorted by insurance cost: " + str(medical_records))
+
+# store and print the three least expensive insurance costs
+cheapest_three = medical_records[0:3]
+print('Here are the three cheapest insurance costs in our medical records: ' + str(cheapest_three))
