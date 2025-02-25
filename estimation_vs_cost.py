@@ -8,4 +8,7 @@ total_cost = 0
 
 for actual_cost in actual_insurance_costs:
   total_cost += actual_cost
-  print(total_cost)
+
+# calculate and print average insurance cost
+average_cost = total_cost / len(actual_insurance_costs)
+print('Average Insurance Cost: $' + str(average_cost))
