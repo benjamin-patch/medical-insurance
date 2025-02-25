@@ -25,3 +25,7 @@ for i in range(len(names)):
     print('The insurance cost for ' + name + ' is below average.')
   else:
     print('The insurance cost for ' + name + ' is equal to the average.')
+
+# adjust estimated costs upward by 10 percent
+updated_estimated_costs = [cost * 11/10 for cost in estimated_insurance_costs]
+print(updated_estimated_costs)
