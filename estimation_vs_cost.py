@@ -12,3 +12,9 @@ for actual_cost in actual_insurance_costs:
 # calculate and print average insurance cost
 average_cost = total_cost / len(actual_insurance_costs)
 print('Average Insurance Cost: $' + str(average_cost))
+
+# print insurance cost for each person
+for i in range(len(names)):
+  name = names[i]
+  insurance_cost = actual_insurance_costs[i]
+  print('The insurance cost for ' + name + ' is $' + str(insurance_cost) + '.')
