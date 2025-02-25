@@ -28,4 +28,5 @@ for i in range(len(names)):
 
 # adjust estimated costs upward by 10 percent
 updated_estimated_costs = [cost * 11/10 for cost in estimated_insurance_costs]
+print('Updated Estimated Costs:')
 print(updated_estimated_costs)
