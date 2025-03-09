@@ -12,3 +12,5 @@ Sylvie Charles   ,22, 22.1
 19,22.7 , #2900.0 ; 
 Lorena Hodson ,65, 33.1 , #19370.0; 
 Isaac Vu ,34, 24.8,   #7045.0"""
+
+print(medical_data)
