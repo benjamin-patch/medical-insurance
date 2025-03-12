@@ -13,4 +13,6 @@ Sylvie Charles   ,22, 22.1
 Lorena Hodson ,65, 33.1 , #19370.0; 
 Isaac Vu ,34, 24.8,   #7045.0"""
 
-print(medical_data)
+# convert '#' to '$'
+updated_medical_data = medical_data.replace('#', '$')
+print(updated_medical_data)
