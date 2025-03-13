@@ -27,4 +27,10 @@ print('There are', num_records, 'medical records in the data.')
 
 # split records into a list of individual strings
 medical_data_split = updated_medical_data.split(';')
-print(medical_data_split)
+
+# convert string records to individual lists
+medical_records = []
+for record in medical_data_split:
+  medical_records.append(record.split(','))
+
+print(medical_records)
