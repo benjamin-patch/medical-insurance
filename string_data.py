@@ -41,4 +41,11 @@ for record in medical_records:
     record_clean.append(item.strip())
   medical_records_clean.append(record_clean)
 
-print(medical_records_clean)
+# suppress temporarily for cleaner output
+# print(medical_records_clean)
+
+# data analysis
+
+# print the names of each individual
+for record in medical_records_clean:
+  print(record[0])
