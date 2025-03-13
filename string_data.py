@@ -24,3 +24,7 @@ for character in updated_medical_data:
 
 # display number of records
 print('There are', num_records, 'medical records in the data.')
+
+# split records into a list of individual strings
+medical_data_split = updated_medical_data.split(';')
+print(medical_data_split)
