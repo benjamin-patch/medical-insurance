@@ -22,4 +22,5 @@ for character in updated_medical_data:
   if character == '$':
     num_records += 1
 
-print('There are {num_records} medical records in the data.'.format(num_records=num_records))
+# display number of records
+print('There are', num_records, 'medical records in the data.')
