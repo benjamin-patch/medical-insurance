@@ -15,4 +15,11 @@ Isaac Vu ,34, 24.8,   #7045.0"""
 
 # convert '#' to '$'
 updated_medical_data = medical_data.replace('#', '$')
-print(updated_medical_data)
+
+# count number of records
+num_records = 0
+for character in updated_medical_data:
+  if character == '$':
+    num_records += 1
+
+print('There are {num_records} medical records in the data.'.format(num_records=num_records))
