@@ -46,6 +46,6 @@ for record in medical_records:
 
 # data analysis
 
-# print the names of each individual
+# print all uppercase names of each individual
 for record in medical_records_clean:
-  print(record[0])
+  print(record[0].upper())
