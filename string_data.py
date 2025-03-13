@@ -33,4 +33,12 @@ medical_records = []
 for record in medical_data_split:
   medical_records.append(record.split(','))
 
-print(medical_records)
+# clear whitespace from records
+medical_records_clean = []
+for record in medical_records:
+  record_clean = []
+  for item in record:
+    record_clean.append(item.strip())
+  medical_records_clean.append(record_clean)
+
+print(medical_records_clean)
