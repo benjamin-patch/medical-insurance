@@ -49,3 +49,17 @@ for record in medical_records:
 # print all uppercase names of each individual
 for record in medical_records_clean:
   print(record[0].upper())
+
+# store each record's attributes in a seperate list
+names = []
+ages = []
+bmis = []
+insurance_costs = []
+
+for record in medical_records_clean:
+  names.append(record[0])
+  ages.append(record[1])
+  bmis.append(record[2])
+  insurance_costs.append(record[3])
+
+print(names, ages, bmis, insurance_costs)
