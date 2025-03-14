@@ -41,8 +41,7 @@ for record in medical_records:
     record_clean.append(item.strip())
   medical_records_clean.append(record_clean)
 
-# suppress temporarily for cleaner output
-# print(medical_records_clean)
+print(medical_records_clean)
 
 # data analysis
 
@@ -62,4 +61,10 @@ for record in medical_records_clean:
   bmis.append(record[2])
   insurance_costs.append(record[3])
 
-print(names, ages, bmis, insurance_costs)
+# calculate average BMI
+total_bmi = 0
+for bmi in bmis:
+  total_bmi += float(bmi)
+
+average_bmi = total_bmi / len(bmis)
+print('Average BMI:', average_bmi)
