@@ -67,4 +67,4 @@ for bmi in bmis:
   total_bmi += float(bmi)
 
 average_bmi = total_bmi / len(bmis)
-print('Average BMI:', average_bmi)
+print('Average BMI:', round(average_bmi, 2))
