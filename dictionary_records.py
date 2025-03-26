@@ -16,6 +16,15 @@ for cost in medical_costs.values():
   total_cost += cost
 average_cost = total_cost / len(medical_costs)
 
+# create a second dictionary from lists
+names = ['Marina', 'Vinay', 'Connie', 'Isaac', 'Valentina']
+ages = [27, 24, 43, 35, 52]
+# zip names and ages together
+zipped_ages = zip(names, ages)
+# list comrehension to dictionary
+names_to_ages = {key:value for key, value in zipped_ages}
+
 # output
 # print(medical_costs)
-print('Average Insurance Cost: $' + str(average_cost))
+# print('Average Insurance Cost: $' + str(average_cost))
+print(names_to_ages)
