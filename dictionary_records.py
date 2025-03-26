@@ -10,5 +10,12 @@ medical_costs.update({
 # correct the value of Vinay's record
 medical_costs['Vinay'] = 3325.0
 
+# calculate average medical cost across patients
+total_cost = 0
+for cost in medical_costs.values():
+  total_cost += cost
+average_cost = total_cost / len(medical_costs)
+
 # output
-print(medical_costs)
+# print(medical_costs)
+print('Average Insurance Cost: $' + str(average_cost))
