@@ -1,1 +1,1 @@
-medical_costs = {}
+medical_costs = {'Marina': 6607.0, 'Vinay': 3225.0}
