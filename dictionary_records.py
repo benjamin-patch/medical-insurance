@@ -23,8 +23,10 @@ ages = [27, 24, 43, 35, 52]
 zipped_ages = zip(names, ages)
 # list comrehension to dictionary
 names_to_ages = {key:value for key, value in zipped_ages}
+# check Marina's age
+marina_age = names_to_ages.get('Marina', None)
+print("Marina's age is", marina_age)
 
 # output
 # print(medical_costs)
 # print('Average Insurance Cost: $' + str(average_cost))
-print(names_to_ages)
