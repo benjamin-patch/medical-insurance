@@ -38,7 +38,10 @@ medical_records["Valentina"] = {"Age": 52, "Sex": "Female", "BMI": 18.7, "Childr
 
 # lookup Connie's insurance cost
 connies_cost = medical_records['Connie']['Insurance_cost']
-print("Connie's insurance cost is", connies_cost, "dollars.")
+# print("Connie's insurance cost is", connies_cost, "dollars.")
+
+# remove Vinay's record
+medical_records.pop("Vinay", "We're sorry, this record could not be found.")
 
 # output
 # print(medical_costs)
