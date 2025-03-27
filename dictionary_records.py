@@ -15,6 +15,7 @@ total_cost = 0
 for cost in medical_costs.values():
   total_cost += cost
 average_cost = total_cost / len(medical_costs)
+# print('Average Insurance Cost: $' + str(average_cost))
 
 # create a second dictionary from lists
 names = ['Marina', 'Vinay', 'Connie', 'Isaac', 'Valentina']
@@ -43,6 +44,18 @@ connies_cost = medical_records['Connie']['Insurance_cost']
 # remove Vinay's record
 medical_records.pop("Vinay", "We're sorry, this record could not be found.")
 
-# output
-# print(medical_costs)
-# print('Average Insurance Cost: $' + str(average_cost))
+# for each key-value pair, print a string that looks like the following:
+# {Name} is a {Age} year old {Sex} {Smoker} with a BMI of {BMI} and insurance
+# cost of {Insurance_cost}
+for name, record in medical_records.items():
+  print(name, 'is a', record['Age'], 'year old', record['Sex'],
+        record['Smoker'], 'with a BMI of', record['BMI'],
+        'and insurance cost of', record['Insurance_cost'], 'dollars.')
+
+"""
+If you would like extra practice with dictionaries, try creating a function
+called update_medical_records() that takes in the name of an individual plus
+their medical data, and then updates the medical_records dictionary accordingly.
+
+Happy coding!
+"""
